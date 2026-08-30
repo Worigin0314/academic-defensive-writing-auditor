@@ -1,0 +1,46 @@
+{
+  "name": "academic-defensive-writing-auditor",
+  "version": "1.0.0",
+  "description": "A reusable LLM skill and CLI for detecting and rewriting defensive academic writing while preserving necessary scientific caveats.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "academic-defensive-writing-auditor": "./bin/cli.js",
+    "defensive-writing-auditor": "./bin/cli.js"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "prompts",
+    "examples",
+    "bin"
+  ],
+  "keywords": [
+    "academic-writing",
+    "scientific-writing",
+    "paper-review",
+    "peer-review",
+    "llm",
+    "skill",
+    "research",
+    "academic-editing",
+    "manuscript",
+    "reviewer"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node ./bin/cli.js --help",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Worigin0314/academic-defensive-writing-auditor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Worigin0314/academic-defensive-writing-auditor/issues"
+  },
+  "homepage": "https://github.com/Worigin0314/academic-defensive-writing-auditor#readme"
+}

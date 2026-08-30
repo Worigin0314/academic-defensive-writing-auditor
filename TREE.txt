@@ -1,0 +1,16 @@
+academic-defensive-writing-auditor/
+├── .github/
+│   └── workflows/
+│       └── npm-publish.yml
+├── bin/
+│   └── cli.js
+├── examples/
+│   └── before-after.md
+├── prompts/
+│   ├── audit-only.md
+│   └── full-paper-cleanup.md
+├── .gitignore
+├── LICENSE
+├── package.json
+├── README.md
+└── SKILL.md
