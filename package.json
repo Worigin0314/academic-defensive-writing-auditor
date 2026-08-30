@@ -5,8 +5,8 @@
   "type": "module",
   "license": "MIT",
   "bin": {
-    "academic-defensive-writing-auditor": "./bin/cli.js",
-    "defensive-writing-auditor": "./bin/cli.js"
+    "academic-defensive-writing-auditor": "bin/cli.js",
+    "defensive-writing-auditor": "bin/cli.js"
   },
   "files": [
     "SKILL.md",
