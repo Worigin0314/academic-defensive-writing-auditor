@@ -1,10 +1,21 @@
 # Academic Defensive Writing Auditor
 
-A reusable LLM skill and CLI for detecting **defensive academic writing**:
-reviewer-facing prebuttals, disclaimer-heavy prose, unnecessary caveat stacking,
+<p align="center">  
+  <b>English</b> ·  
+  <a href="./README.zh-CN.md">简体中文</a>  
+</p>
+
+<p align="center">  
+  <a href="https://www.npmjs.com/package/academic-defensive-writing-auditor"><img src="https://img.shields.io/npm/v/academic-defensive-writing-auditor.svg" alt="npm version"></a>  
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="license"></a>  
+  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg" alt="node"></a>  
+</p>
+
+A reusable LLM skill and CLI for detecting **defensive academic writing**:  
+reviewer-facing prebuttals, disclaimer-heavy prose, unnecessary caveat stacking,  
 result excuses, omitted-experiment defenses, and AI-style automatic summaries.
 
-It is designed for research papers, conference submissions, rebuttal cleanup,
+It is designed for research papers, conference submissions, rebuttal cleanup,  
 and manuscript polishing.
 
 > **Not a hedge-word remover.**  
@@ -12,7 +23,7 @@ and manuscript polishing.
 
 ## Install
 
-### One-command install with npx
+### One-command install with npx (Recommended)
 
 ```bash
 npx academic-defensive-writing-auditor
@@ -71,6 +82,7 @@ npx academic-defensive-writing-auditor --dir ./.agents/skills --force
 academic-defensive-writing-auditor/
 ├── SKILL.md
 ├── README.md
+├── README.zh-CN.md
 ├── LICENSE
 ├── examples/
 │   └── before-after.md
@@ -121,14 +133,14 @@ See [`SKILL.md`](./SKILL.md) for the complete rules.
 
 Before:
 
-> Although the improvement is modest, the result remains encouraging given the
+> Although the improvement is modest, the result remains encouraging given the  
 > challenging evaluation setting, and we emphasize that we do not claim universal robustness.
 
 After:
 
 > Accuracy improves by 0.8 points under the evaluated shift.
 
-If limited evaluation scope materially affects interpretation, state that once
+If limited evaluation scope materially affects interpretation, state that once  
 in the Limitations section.
 
 ## Repository Structure
@@ -147,8 +159,9 @@ academic-defensive-writing-auditor/
 │   └── full-paper-cleanup.md
 ├── .gitignore
 ├── LICENSE
-├── package.json
 ├── README.md
+├── README.zh-CN.md
+├── package.json
 └── SKILL.md
 ```
 
@@ -161,19 +174,19 @@ academic-defensive-writing-auditor/
 npm login
 ```
 
-3. Verify:
+1. Verify:
 
 ```bash
 npm whoami
 ```
 
-4. Check package contents:
+1. Check package contents:
 
 ```bash
 npm pack --dry-run
 ```
 
-5. Test locally:
+1. Test locally:
 
 ```bash
 npm pack
@@ -182,7 +195,7 @@ cd npm-test
 npx ../academic-defensive-writing-auditor-1.0.0.tgz
 ```
 
-6. Publish:
+1. Publish:
 
 ```bash
 npm publish --access public
@@ -232,7 +245,7 @@ over:
 anticipated objection → disclaimer → justification → weakened claim
 ```
 
-The purpose is not to make a paper sound overconfident. The purpose is to make
+The purpose is not to make a paper sound overconfident. The purpose is to make  
 the evidence carry the argument.
 
 ## Contributing
@@ -240,6 +253,7 @@ the evidence carry the argument.
 Issues and pull requests are welcome.
 
 Good contributions include:
+
 - new defensive-writing patterns;
 - discipline-specific examples;
 - false-positive cases;

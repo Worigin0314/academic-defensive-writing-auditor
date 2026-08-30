@@ -105,7 +105,7 @@ function installSkill(baseDir, force) {
 
   fs.mkdirSync(targetRoot, { recursive: true });
 
-  for (const file of ["SKILL.md", "README.md", "LICENSE"]) {
+  for (const file of ["SKILL.md", "README.md", "README.zh-CN.md", "LICENSE"]) {
     fs.copyFileSync(
       path.join(packageRoot, file),
       path.join(targetRoot, file)
@@ -127,6 +127,7 @@ function installSkill(baseDir, force) {
   console.log("Files:");
   console.log("  SKILL.md");
   console.log("  README.md");
+  console.log("  README.zh-CN.md");
   console.log("  LICENSE");
   console.log("  prompts/");
   console.log("  examples/");

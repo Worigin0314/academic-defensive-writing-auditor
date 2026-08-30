@@ -11,6 +11,7 @@
   "files": [
     "SKILL.md",
     "README.md",
+    "README.zh-CN.md",
     "LICENSE",
     "prompts",
     "examples",

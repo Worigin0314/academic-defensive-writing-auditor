@@ -11,6 +11,7 @@ academic-defensive-writing-auditor/
 │   └── full-paper-cleanup.md
 ├── .gitignore
 ├── LICENSE
-├── package.json
 ├── README.md
+├── README.zh-CN.md
+├── package.json
 └── SKILL.md
